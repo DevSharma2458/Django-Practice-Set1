@@ -53,6 +53,66 @@
 
 # # -------------------------------------------------------------
 
+# # Target:
+# # Multiple car inputs lene hain (brand + features).
+# # Jab tak user kahe "nahi", tab tak input continue chale.
+# # Sabhi data list of objects ke form mein store ho.
+# # End mein saare cars ka brand aur unke features print ho.
+
+# # Car with Features
+# class CarFeature:
+#     def __init__(self, brand, features):
+#         self.brand = brand # Store car brand
+#         self.features = features # Store list of features
+
+    
+# # Method to display brand of the car
+#     def display_brand(self):
+#         print("The car brand is", self.brand)
+
+
+# # Method to display features of the car
+#     def display_feature(self):
+#         if len(self.features) <= 0:
+#             print("No features available for this car ")
+#         else:
+#             print("Features: ")
+#             for feature in self.features: # Loop through the list and print each feature
+#                 print("-", feature)    
+
+# # List to store all car objects
+# all_cars = []
+
+# while True:
+#    # Input Section
+#     brand = input("Enter the car brand: ")
+
+#     # ASk user how many features they want to add
+
+#     num = int(input("How many features do you want to add? "))
+#     features = [] # Initialize an empty list to store features
+
+#     # if user wants to add features
+#     if  num > 0:
+#         for i in range(num):
+#             feat = input(f"Enter feature {i+1}: ") # Take input one by one 
+#             features.append(feat) # Add to list
+
+#     car = CarFeature(brand, features)
+#     all_cars.append(car) # Add the car object to the list
+
+
+#     more = input("Do you want to add another car? (yes/no): ").strip().lower()
+#     if more != 'yes':
+#         break
+
+
+# # Display all car info after loop ends
+# print("\n---Summary of Entered Cars---")
+# for i, car in enumerate(all_cars, start=1):
+#     print(f"\nCar {i}:")
+#     car.display_brand()
+#     car.display_feature()
 
 
 
