@@ -1,3 +1,26 @@
+# class Person:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+
+# p1 = Person ('John', 87)
+# print(p1.name)
+# print(p1.age)
+
+# # -------------------------------------------------------------
+
+# class Person:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+# name  = str(input("Enter your name: "))
+# age = int(input("Enter your age: "))
+# p1 = Person (name, age)
+# print(p1.name)
+# print(p1.age)
+
+
+# # -------------------------------------------------------------
 # class Car:
 #     def __init__(self, brand):
 #         self.brand = brand
@@ -114,7 +137,35 @@
 #     car.display_brand()
 #     car.display_feature()
 
+# # -------------------------------------------------------------
 
+
+# # Basic ATM Class
+
+# class ATM:
+#     def __init__(self, balance):
+#         self.balance = balance
+
+#     def deposit(self, amount):
+#         self.balance += amount
+#         print(f"Deposited ₹{amount}. New balance: ₹{self.balance}")
+
+#     def withdraw(self, amount):
+#         if amount <= self.balance:
+#             self.balance -= amount
+#             print(f"Withdrew ₹{amount}. Remaining balance: ₹{self.balance}")
+#         else:
+#             print("Insufficient balance!")
+
+#     def check_balance(self):
+#         print(f"Current balance: ₹{self.balance}")
+
+# # ✅ Testing the class
+# my_atm = ATM(1000)
+# my_atm.deposit(500)
+# my_atm.withdraw(700)
+# my_atm.withdraw(1000)   # edge case
+# my_atm.check_balance()
 
 
 
